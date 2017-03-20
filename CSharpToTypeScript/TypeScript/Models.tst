@@ -26,11 +26,14 @@
         return classObject.Name;
     }
 }
-module CSharpToTypeScript.TypeScriptTemplates {  
+module TypeScript.Models {  
     $Classes(*)[
-    export class $ClassName {
+    export class $ClassName { 
         $Properties[
         $name: $Type;]
 
+        constructor($Properties[$name: $Type][,
+                    ]) {
+        }
     }]
 }

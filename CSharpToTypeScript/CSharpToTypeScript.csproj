@@ -53,92 +53,72 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TypeScriptTemplates\CSharpDTO_TypeScriptInterface.tst.copy" />
-    <None Include="TypeScriptTemplates\CSharpDTO_TypeScriptInterface.tst" />
+    <None Include="TypeScript\Models.tst.copy" />
+    <None Include="TypeScript\Models.tst" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TypeScriptTemplates\Account.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\Account.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\Account.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\AccountStatus.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\AccountStatus.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\AccountStatus.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\Address.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\Address.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\Address.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\AuthorizingLevel.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\AuthorizingLevel.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\AuthorizingLevel.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\Contact.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\Contact.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\Contact.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\ContactAssignment.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\ContactAssignment.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\ContactAssignment.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\ContactInfo.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\ContactInfo.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\ContactInfo.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\ContactRole.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\ContactRole.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\ContactRole.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\Country.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\Country.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\Country.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\Customer.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\Customer.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\Customer.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\CustomerModel - Copy.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
-      <CustomToolNamespace>Models\CustomerModel.cs</CustomToolNamespace>
-    </Content>
-    <Content Include="TypeScriptTemplates\EntityBase.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\EntityBase.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\EntityBase.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\EntityBaseModel - Copy.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
-      <CustomToolNamespace>Models\EntityBaseModel.cs</CustomToolNamespace>
-    </Content>
-    <Content Include="TypeScriptTemplates\ObjectInfo.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\ObjectInfo.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\ObjectInfo.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\ObjectInfoModel - Copy.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
-      <CustomToolNamespace>Models\ObjectInfoModel.cs</CustomToolNamespace>
-    </Content>
-    <Content Include="TypeScriptTemplates\Province.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\Province.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\Province.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\Region.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\Region.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\Region.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\RegionModel - Copy.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
-      <CustomToolNamespace>Models\RegionModel.cs</CustomToolNamespace>
-    </Content>
-    <Content Include="TypeScriptTemplates\State.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\State.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\State.cs</CustomToolNamespace>
     </Content>
-    <Content Include="TypeScriptTemplates\User - Copy.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
-      <CustomToolNamespace>Models\User.cs</CustomToolNamespace>
-    </Content>
-    <Content Include="TypeScriptTemplates\User.ts">
-      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+    <Content Include="TypeScript\User.ts">
+      <DependentUpon>Models.tst</DependentUpon>
       <CustomToolNamespace>Models\User.cs</CustomToolNamespace>
     </Content>
   </ItemGroup>
