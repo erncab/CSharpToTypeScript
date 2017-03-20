@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{760F19B4-988D-4F8D-A2AE-CCC284145DA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpToTypeScript</RootNamespace>
+    <AssemblyName>CSharpToTypeScript</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\AccountStatus.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\AuthorizingLevel.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ContactAssignment.cs" />
+    <Compile Include="Models\ContactInfo.cs" />
+    <Compile Include="Models\ContactRole.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\EntityBase.cs" />
+    <Compile Include="Models\ObjectInfo.cs" />
+    <Compile Include="Models\Province.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TypeScriptTemplates\CSharpDTO_TypeScriptInterface.tst.copy" />
+    <None Include="TypeScriptTemplates\CSharpDTO_TypeScriptInterface.tst" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TypeScriptTemplates\Account.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\Account.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\AccountStatus.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\AccountStatus.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\Address.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\Address.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\AuthorizingLevel.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\AuthorizingLevel.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\Contact.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\Contact.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\ContactAssignment.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\ContactAssignment.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\ContactInfo.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\ContactInfo.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\ContactRole.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\ContactRole.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\Country.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\Country.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\Customer.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\Customer.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\CustomerModel - Copy.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
+      <CustomToolNamespace>Models\CustomerModel.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\EntityBase.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\EntityBase.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\EntityBaseModel - Copy.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
+      <CustomToolNamespace>Models\EntityBaseModel.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\ObjectInfo.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\ObjectInfo.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\ObjectInfoModel - Copy.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
+      <CustomToolNamespace>Models\ObjectInfoModel.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\Province.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\Province.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\Region.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\Region.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\RegionModel - Copy.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
+      <CustomToolNamespace>Models\RegionModel.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\State.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\State.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\User - Copy.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst.copy</DependentUpon>
+      <CustomToolNamespace>Models\User.cs</CustomToolNamespace>
+    </Content>
+    <Content Include="TypeScriptTemplates\User.ts">
+      <DependentUpon>CSharpDTO_TypeScriptInterface.tst</DependentUpon>
+      <CustomToolNamespace>Models\User.cs</CustomToolNamespace>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
